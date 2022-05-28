@@ -12,39 +12,17 @@ public class onGroundCheck : MonoBehaviour
     {
         if (collision.gameObject.tag == "dusman")
         {
-            //Debug.Log("Zemine çarpti.");
-
-            //SceneManager.LoadScene(0);
-
-            Time.timeScale = 0; //zamani durdurur
+            Time.timeScale = 0;
 
             _gameOverPanel.SetActive(true);
         }
     }
 
-
     public void TekrarBaslat()
     {
-        SceneManager.LoadScene(0); //sahneyi yükler
+        SceneManager.LoadScene(0);
 
-        Time.timeScale = 1; //zamani eski haline getirir
+        Time.timeScale = 1;
     }
 
-        // Start is called before the first frame update
-        void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    //Izometrik TileMap yap (Sadece tasarým).
-
-    //Internetten bulunan spritelarla kýrmýzý baþlýklý kýz yap.
-
-    //mermi yap
 }
